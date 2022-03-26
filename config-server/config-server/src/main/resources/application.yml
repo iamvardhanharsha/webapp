@@ -1,0 +1,17 @@
+server:
+  port: 8131
+spring:
+ application:
+  name: config-server
+ cloud:
+    config:
+      server:
+        git:
+          password: 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
+          uri: https://github.com/iamvardhanharsha/FarmerinfoConfig
+          username: iamvardhanharsha
+          default-label: master
+          search-paths: Farmerinfo-config
+          #search-paths: '*,{application},config/{application}, config/, config/*'
+          #search-paths: '{application}'
+          #search-paths: 'config/{application}'
